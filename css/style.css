@@ -14,6 +14,10 @@ a{
     text-decoration: none;
     color: black;
 }
+
+img{
+    max-width: 100%;
+}
 /*FUENTE ANADIDA DE GOOGLE*/
 
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Sarina&display=swap');
@@ -291,15 +295,32 @@ footer {
 
 /*PAGINA NOSOTROS*/
 
+.contenedores-nosotros {
+    display: flex;
+    max-width: 100%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.contenedores-internos-nosotros {
+    justify-content: center;
+    max-width: 50%;
+    padding: 20px;
+    margin-top: 3rem;
+    align-self: center;
+}
+
 .titulo-nosotros {
     font-family: 'fungis-bold';
     font-size: 18px; 
     color: #25584d;
 }
-
-.img-nosotros{
-    width: 50%;
+.texto-nosotros{
+    font-family: 'fungis-regular';
+    font-size: 14px;
+    color: black;
 }
+
 
 /*BLOG*/
 
