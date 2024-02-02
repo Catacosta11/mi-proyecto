@@ -1,0 +1,378 @@
+/*MODIFICAR VALORES POR DEFECTO*/
+*{
+    padding: 0px;
+    margin: 0px;
+    /*BOX SIZING hace que los paddings o margenes no hagan que los elementos se agranden en todo mi HTML*/
+    box-sizing: border-box;
+}
+
+ul ol {
+text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/*FUENTE ANADIDA DE GOOGLE*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Sarina&display=swap');
+
+/* cómo usarla
+font-family: 'Sarina', cursive;
+font-family: 'Gravitas One', serif;
+*/
+
+/*FUENTE ANADIDA DESDE EL PC*/
+
+img{
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'fungis-regular';
+    src: url(../fuentes/FUNGIS\ Regular.otf);
+}
+
+@font-face {
+    font-family: 'fungis-bold';
+    src: url(../fuentes/FUNGIS\ Heavy.otf);
+}
+
+
+/* MENU PRINCIPAL*/
+.bg-black {
+    color: black;
+}
+
+.nav-link{
+    color:#f4f2e9;
+}
+
+.nav-link:hover{
+    color: #f0b5ff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+.margin-changer{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+/* MENU PRINCIPAL*/
+
+.logo-header {
+    width: 4rem;
+}
+
+.carrito-contenedor{
+    display: flex;
+    justify-content: center;
+    width: 4rem;
+    order: 2;
+}
+.carrito-nav{
+    width: 2rem;
+    justify-content: center;
+}
+
+.menu-principal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.lista-menu {
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.opciones-menu {
+    text-decoration: none;
+    color: #f4f2e9;
+    font-family:'fungis-regular';
+}
+
+
+/* INDEX*/
+    /* IMG BANNER*/
+
+    #seccion-banner{
+    grid-column: span 12;
+    grid-row: 1/2;
+    }
+
+    /* CATEGORIAS*/
+
+    #seccion-categorias {
+        display: flex;
+        grid-column: span 12;
+        grid-row: 2/3;
+        height: 15rem;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .categorias-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .categorias-imagenes {
+        width: 30%;
+        
+    }
+
+    .nombre-categoria {
+        font-family: 'fungis-bold';
+        font-size: 18px;
+        font-weight: bold;
+        color:black;
+        text-align: center;
+    }
+
+    /* CARDS BENEFICIOS*/
+
+    .contenedor-cards-beneficios {
+        background-color: #25584d;
+        max-width: 30%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .imagen-cards-beneficios {
+        width: 5rem;
+
+    }
+
+    .contenedor-texto-cards-beneficios{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo-cards-beneficios {
+        font-family: 'fungis-bold';
+        font-size: 18px;
+        color: #f4f2e9;
+    }
+
+    .texto-cards-beneficios {
+        font-family:'fungis-regular';
+        font-size: 14px;
+        color: #f4f2e9;
+    }
+  
+    /* CARDS PRODUCTOS*/
+
+    .cards-productos {
+        justify-content: center;
+        max-width: 20%;
+        border: 0;
+     }
+    .cards-productos-info {
+       justify-content: center;
+       text-align: center;
+    }
+
+    .nombre-producto{
+        font-family:'fungis-regular';
+    }
+    .precio-producto {
+        font-family: 'Gravitas One', serif;
+        font-size: 13px; 
+    }
+
+
+/* FOOTER*/
+
+footer {
+    background-color: #25584d;
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+   
+}
+
+.opciones-menu-footer {
+    text-decoration: none;
+    color: #f4f2e9;
+    font-family:'fungis-regular';
+}
+
+.contenedores-footer{
+    justify-content: end;
+   align-self: center;
+}
+
+
+.logo-footer {
+    width: 6rem;
+}
+
+.estilo-lista{
+    list-style: none;
+}
+
+/*BANNERS*/
+.all-banners{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banners-centered-text{
+    font-family:'fungis-regular';
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* PAGINA CONTACTO*/
+
+#foto-contacto {
+    width: 50%;
+}
+
+.label-input {
+    font-family:'fungis-regular';
+    color: black;
+    font-family:'fungis-regular';
+    font-size: 16px;
+}
+
+.botones {
+    font-family:'fungis-regular';
+    color: #f4f2e9;
+    background-color: #ED5A29;
+}
+
+.botones:hover{
+    font-family:'fungis-regular';
+    color: #f4f2e9;
+    background-color: #d34e2a;
+}
+
+
+
+/*PAGINA PRODUCTOS*/
+
+.opciones-menu-productos {
+    padding-top: 1rem;
+    background-color: #f0b5ff;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-family:'fungis-regular';
+   
+}
+
+.opciones-menu-productos:hover {
+    padding-top: 1rem;
+    background-color: #d89aef;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-family:'fungis-regular';
+    align-self: center;
+}
+
+
+/*PAGINA NOSOTROS*/
+
+.titulo-nosotros {
+    font-family: 'fungis-bold';
+    font-size: 18px; 
+    color: #25584d;
+}
+
+.img-nosotros{
+    width: 50%;
+}
+
+/*BLOG*/
+
+.cards-blog{
+border: 0px;
+max-width: 30%;
+margin-top: 2rem;
+}
+
+.foto-card-blog {
+    width: 25%;
+}
+
+.texto-cards-blog {
+ font-family: 'fungis-regular';
+font-size: 14px; 
+}
+
+.botones-dos {
+    font-family:'fungis-regular';
+    max-width: 25%;
+    color: #f4f2e9;
+    background-color: #ED5A29;
+}
+
+.botones-dos:hover{
+    font-family:'fungis-regular';
+    color: #f4f2e9;
+    background-color: #d34e2a;
+}
+
+/* MEDIA QUERY */
+
+
+/*Responsive mobile*/
+@media only screen and (max-width: 400px) {
+        
+    .margin-changer{
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
+/*Responsive tablet*/ 
+
+@media only screen and (max-width: 991px){
+    .carrito-contenedor {
+        order: 0;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .contenedor-cards-beneficios {
+        background-color: #25584d;
+        max-width: 100%;
+    }
+  
+}
+
+@media only screen and (max-width: 625px){
+    .cards-productos {
+        justify-content: center;
+        max-width: 100%;
+        border: 0;
+        margin: 2rem;
+     }
+}
+
+@media only screen and (max-width: 625px){
+    .cards-blog{
+        border: 0px;
+        max-width: 100%;
+        margin-top: 2rem;   
+        }
+     }
+
