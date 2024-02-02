@@ -200,7 +200,7 @@ img{
 /* FOOTER*/
 
 footer {
-    background-color: #25584d;
+    background-color: black;
     display: flex;
     padding-top: 2rem;
     padding-bottom: 4rem;
@@ -298,15 +298,15 @@ footer {
 .contenedores-nosotros {
     display: flex;
     max-width: 100%;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin: 3rem;
+
 }
 
 .contenedores-internos-nosotros {
     justify-content: center;
     max-width: 50%;
     padding: 20px;
-    margin-top: 3rem;
+  
     align-self: center;
 }
 
