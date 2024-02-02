@@ -244,10 +244,14 @@ footer {
 }
 
 /* PAGINA CONTACTO*/
-
-#foto-contacto {
-    width: 50%;
+.contenedor-contacto{
+display: flex;
 }
+
+.contenedores-internos-contacto{
+    max-width: 50%;
+}
+
 
 .label-input {
     font-family:'fungis-regular';
