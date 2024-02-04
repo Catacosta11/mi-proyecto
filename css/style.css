@@ -245,13 +245,33 @@ footer {
 
 /* PAGINA CONTACTO*/
 .contenedor-contacto{
-display: flex;
+    display: flex;
+}
+
+.contenedor-isaza {
+    background-color: red;
+    justify-content: space-between;
+    min-height: 10vh;
+    display: flex;
 }
 
 .contenedores-internos-contacto{
     max-width: 50%;
+    flex: 1;
+    display: flex;
 }
 
+.opciones-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.opciones-input-dos{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
 
 .label-input {
     font-family:'fungis-regular';
