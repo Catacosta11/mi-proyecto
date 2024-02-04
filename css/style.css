@@ -18,6 +18,10 @@ a{
 img{
     max-width: 100%;
 }
+
+p{
+    margin: 0px;
+}
 /*FUENTE ANADIDA DE GOOGLE*/
 
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Sarina&display=swap');
@@ -259,22 +263,24 @@ footer {
     max-width: 50%;
     flex: 1;
     display: flex;
+    gap: 2rem;
 }
 
 .opciones-input{
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+    gap: 2rem;
 }
 
 .opciones-input-dos{
     display: flex;
+    align-items: center;
     flex-direction: row;
-    margin-bottom: 1rem;
+    gap: 1rem;
 }
 
-.label-input {
-    font-family:'fungis-regular';
+.label-input{
     color: black;
     font-family:'fungis-regular';
     font-size: 16px;
