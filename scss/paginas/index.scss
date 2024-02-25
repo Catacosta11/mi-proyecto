@@ -1,0 +1,71 @@
+/*BANNER PRINCIPAL*/
+    #seccion-banner{
+    grid-column: span 12;
+    grid-row: 1/2;
+    }
+
+/*SECCION CATEGORIAS*/
+
+    #seccion-categorias {
+        display: flex;
+        grid-column: span 12;
+        grid-row: 2/3;
+        height: $x15;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .categorias-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .categorias-imagenes {
+        width: 30%;
+    }
+
+    .nombre-categoria {
+        color:$black;
+        text-align: center;
+    }
+
+
+/*CARDS BENEFICIOS*/ 
+    .contenedor-cards-beneficios {
+        background-color: $verde;
+        max-width: $per30;
+        padding-top: $x1;
+        padding-bottom: $x1;
+    }
+
+    .imagen-cards-beneficios {
+        width: $x4;
+    }
+
+    .contenedor-texto-cards-beneficios{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo-cards-beneficios {
+        color: $crema;
+    }
+
+    .texto-cards-beneficios {
+        color: $crema;
+    }
+
+ /* CARDS PRODUCTOS*/
+
+    .cards-productos {
+        justify-content: center;
+        max-width: $per20;
+        border: 0;
+    }
+
+    .cards-productos-info {
+        justify-content: center;
+        text-align: center;
+     }

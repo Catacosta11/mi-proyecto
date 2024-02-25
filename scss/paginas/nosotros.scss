@@ -1,0 +1,23 @@
+/*NOSOTROS*/
+    .contenedores-nosotros {
+        display: flex;
+        max-width: $per100;
+        margin: $x4;
+    }
+
+    .contenedores-internos-nosotros {
+        justify-content: center;
+        max-width: $per50;
+        padding: 20px;
+        align-self: center;
+    }
+
+    .color-titulo-nosotros {
+        color: $verde;
+    }
+    
+    .color-texto-nosotros{
+        color: $black;
+    }
+
+    

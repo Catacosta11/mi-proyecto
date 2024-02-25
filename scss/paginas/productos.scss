@@ -1,0 +1,16 @@
+/*Productos*/ 
+.opciones-menu-productos {
+    padding-top: $x1;
+    background-color: $rosa;
+    text-decoration: none;
+    text-align: center;
+    color: $black;
+    
+    &:hover{
+        padding-top: $x1;
+        background-color: $rosa-hover;
+        text-decoration: none;
+        text-align: center;
+        color: $black;
+    }
+}

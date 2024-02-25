@@ -1,0 +1,31 @@
+/*CONTACTO*/
+
+.contenedor-contacto{
+    display: flex;
+}
+
+.contenedores-internos-contacto{
+    max-width: $per50;
+    flex: 1;
+    display: flex;
+    gap: $x2;
+}
+
+.opciones-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $x1;
+    gap: $x2;
+}
+
+.opciones-input-dos{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: $x1;
+}
+
+.label-input{
+    color: $black;
+}
+

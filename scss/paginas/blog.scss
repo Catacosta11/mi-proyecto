@@ -1,0 +1,26 @@
+/*BLOG*/
+
+.cards-blog{
+    border: 0px;
+    margin-top: $x2;
+    }
+
+
+.foto-card-blog {
+     width: $per25;
+ }
+
+ .botones-dos {
+    font-family:$fuente-regular;
+    max-width: $per25;
+    color:$crema;
+    background-color:$naranja;
+
+    &:hover{
+        font-family:$fuente-regular;
+        max-width: $per25;
+        color:$crema;
+        background-color: $naranja-hover;
+    }
+}
+

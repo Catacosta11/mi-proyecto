@@ -1,0 +1,148 @@
+/*Menu principal*/
+
+margin-changer{
+    margin-left: $x4;
+    margin-right: $x4;
+}
+
+.bg-black {
+    color:$black;
+}
+
+.nav-link{
+    color:$crema;
+}
+
+.nav-link:hover{
+    color: $rosa;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  .logo-header {
+    width: $x4;
+}
+
+.carrito-contenedor{
+    display: flex;
+    justify-content: center;
+    width: $x4;
+    order: 2;
+}
+
+.carrito-nav{
+    width: $x2;
+    justify-content: center;
+}
+
+.menu-principal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.lista-menu {
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: $x2;
+}
+
+@mixin fuente-menu($color, $font, $decoration){
+    font-family: $font;
+    color:$color;
+    text-decoration:$decoration;
+  }
+
+.opciones-menu {
+    @include fuente-menu($crema, 'fungis-regular', none)
+  }
+
+
+/*FOOTER*/ 
+
+footer {
+    background-color:$black;
+    display: flex;
+    padding-top: $x2;
+    padding-bottom: $x4;
+}
+
+.opciones-menu-footer {
+    text-decoration: none;
+    color: $crema;
+}
+
+.contenedores-footer{
+    justify-content: end;
+   align-self: center;
+}
+
+.logo-footer {
+    width: $x6;
+}
+
+.estilo-lista{
+    list-style: none;
+}
+
+/*TODOS LOS BANNERS*/ 
+
+.all-banners{
+    position: relative;
+    text-align: center;
+    color: $crema;
+}
+
+.banners-centered-text{
+    font-family:'fungis-regular';
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*Botones*/
+
+.botones {
+    font-family:$fuente-regular;
+    color: $crema;
+    background-color: $naranja;
+
+    &:hover{
+        font-family:$fuente-regular;
+        color: $crema;
+        background-color: $naranja-hover;
+    }
+}
+
+
+/*titulos y textos - estilos y tamaños*/ 
+
+   $font-styles: (
+    titulos: "fungis-bold",
+    textos: "fungis-regular"
+);
+
+@each $nombre-texto, $estilo-texto in $font-styles {
+.#{$nombre-texto}-estilo {
+        font-family:$estilo-texto;
+    }
+};
+
+$font-sizes: (
+    titulos: 18px,
+    textos: 14px
+);
+
+@each $nombre-size-texto, $size-texto in $font-sizes {
+.#{$nombre-size-texto}-size {
+        font-size:$size-texto;
+    }
+};
