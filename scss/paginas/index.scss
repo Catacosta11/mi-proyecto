@@ -1,7 +1,13 @@
 /*BANNER PRINCIPAL*/
-    #seccion-banner{
-    grid-column: span 12;
-    grid-row: 1/2;
+.seccion-banner{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+    /* grid-column: span 12;
+    grid-row: 1/2; */
     }
 
 /*SECCION CATEGORIAS*/
@@ -60,12 +66,20 @@
  /* CARDS PRODUCTOS*/
 
     .cards-productos {
+        display: flex;
         justify-content: center;
         max-width: $per20;
         border: 0;
     }
 
     .cards-productos-info {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         text-align: center;
+        gap: $x1;
+     }
+
+     .img-cards-productos {
+        overflow: hidden;
      }

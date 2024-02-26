@@ -112,9 +112,11 @@ img{
 /* INDEX*/
     /* IMG BANNER*/
 
-    #seccion-banner{
-    grid-column: span 12;
-    grid-row: 1/2;
+    .seccion-banner{
+    position: relative;
+    text-align: center;
+    /* grid-column: span 12;
+    grid-row: 1/2; */
     }
 
     /* CATEGORIAS*/

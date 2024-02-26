@@ -155,9 +155,14 @@ footer {
 }
 
 /*BANNER PRINCIPAL*/
-#seccion-banner {
-  grid-column: span 12;
-  grid-row: 1/2;
+.seccion-banner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  /* grid-column: span 12;
+  grid-row: 1/2; */
 }
 
 /*SECCION CATEGORIAS*/
@@ -212,14 +217,22 @@ footer {
 
 /* CARDS PRODUCTOS*/
 .cards-productos {
+  display: flex;
   justify-content: center;
   max-width: 20%;
   border: 0;
 }
 
 .cards-productos-info {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
+  gap: 1rem;
+}
+
+.img-cards-productos {
+  overflow: hidden;
 }
 
 /*CONTACTO*/
@@ -311,6 +324,28 @@ footer {
   max-width: 25%;
   color: #f4f2e9;
   background-color: #d34e2a;
+}
+
+/*Animaciones*/
+.animacion-productos {
+  transition: all 0.5s 0.1s ease-in-out;
+}
+
+.animacion-productos:hover {
+  transform: scale(1.14) rotate(4deg);
+}
+
+.boton-banner {
+  font-family: "fungis-regular";
+  justify-content: center;
+  align-items: center;
+  color: #f4f2e9;
+  background-color: #25584d;
+  animation: 3s 2ms linear 2 normal;
+}
+.boton-banner:hover {
+  background-color: #1c483f;
+  color: #f4f2e9;
 }
 
 /*Responsive mobile*/
