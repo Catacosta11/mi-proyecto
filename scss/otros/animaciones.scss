@@ -1,0 +1,27 @@
+/*Animaciones*/
+
+.animacion-productos {
+    transition:all 0.5s  0.1s  ease-in-out;
+}
+
+.animacion-productos:hover {
+   transform: scale(1.14) rotate(4deg);
+} 
+
+
+.boton-banner {
+    font-family:$fuente-regular;
+    justify-content: center;
+    align-items: center;
+    color: $crema;
+    background-color: $verde;
+
+
+    animation: 3s 2ms linear 2 normal;
+
+    &:hover{
+        background-color:$verde-hover;
+        color: $crema;
+    }
+}
+
